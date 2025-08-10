@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artesanía Viajera - Arte original hecho a mano por Daniel Vargas. Piezas únicas inspiradas en viajes, escalada y cultura underground.">
+    <meta name="keywords" content="artesanía, arte original, viajero, escalada, punk, handmade, Daniel Vargas, NFT, Web3">
+    <title>Artesanía Viajera | Arte Original & Experiencias Únicas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__brand">
+                <div class="header__logo">
+                    <svg class="header__logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"></path>
+                    </svg>
+                </div>
+                <span class="header__brand-text">Artesanía Viajera</span>
+            </div>
+            
+            <nav class="header__nav">
+                <a href="#sobre-mi" class="header__nav-link">Sobre Mí</a>
+                <a href="#productos" class="header__nav-link">Productos</a>
+                <a href="#web3" class="header__nav-link">Web3</a>
+                <a href="#testimonios" class="header__nav-link">Testimonios</a>
+                <a href="#contacto" class="header__nav-link">Contacto</a>
+            </nav>
+
+            <div class="header__actions">
+                <button class="btn btn--primary" onclick="window.location.href='https://artesaniaviajera.online/tienda/'">Explorar Tienda</button>
+            </div>
+
+            <button class="header__menu-toggle" id="menuToggle">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+        </div>
+
+        <div class="header__mobile-menu" id="mobileMenu">
+            <a href="#sobre-mi" class="header__mobile-link">Sobre Mí</a>
+            <a href="#productos" class="header__mobile-link">Productos</a>
+            <a href="#web3" class="header__mobile-link">Web3</a>
+            <a href="#testimonios" class="header__mobile-link">Testimonios</a>
+            <a href="#contacto" class="header__mobile-link">Contacto</a>
+            <button class="btn btn--primary btn--full-width" onclick="window.location.href='https://artesaniaviajera.online/tienda/'">Explorar Tienda</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__background">
+            <div class="hero__bg-element hero__bg-element--1"></div>
+            <div class="hero__bg-element hero__bg-element--2"></div>
+            <div class="hero__bg-element hero__bg-element--3"></div>
+        </div>
+        
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"></path>
+                    </svg>
+                    <a href="https://biotaorganicosyartesanal.com/" class="hero__badge-text">Arte Original que impulsa un sueño</a>
+                </div>
+
+                <h1 class="hero__title">
+                    Arte que financia a
+                    <span class="hero__title-highlight">Biota Organicos</span>
+                </h1>
+
+                <p class="hero__subtitle">
+                    Soy Daniel Vargas Hermosa, Cada pieza no solo es arte y viajes…
+                    es el motor que
+                    <span class="hero__subtitle-highlight" src="">financia el proyecto Biota Orgánicos.</span> 
+                    para cultivar un futuro sostenible.
+                </p>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <div class="hero__stat-number">50+</div>
+                        <div class="hero__stat-label">Pueblos Visitados</div>
+                    </div>
+                    <div class="hero__stat">
+                        <div class="hero__stat-number">200+</div>
+                        <div class="hero__stat-label">Piezas y Creaciones</div>
+                    </div>
+
+                    <div class="hero__stat">
+                        <div class="hero__stat-number">20</div>
+                        <div class="hero__stat-label">Años Viajando</div>
+                    </div>
+                </div>
+
+                <div class="hero__actions">
+                    <button class="btn btn--primary btn--large" onclick="scrollToSection('productos')">
+                        Ver Mis Creaciones
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                    <button class="btn btn--secondary btn--large" onclick="scrollToSection('sobre-mi')">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Mi Historia (3 min)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="about__container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <h2>
+                        El <span class="about__highlight">Artista</span> Detrás de cada Pieza
+                    </h2>
+                    <p class="about__text">
+                        Soy Daniel Vargas Hermosa, un espíritu libre que encontró en la artesanía 
+                        la forma perfecta de documentar mis aventuras. Cada pieza que creo nace 
+                        de una experiencia real: una pared de roca conquistada, un pueblo 
+                        mágico descubierto, una conexión humana genuina.
+                    </p>
+                    <p class="about__text">
+                        Mi estilo fusiona la rebeldía punk con la sabiduría ancestral de los 
+                        artesanos que he conocido en mi camino. No soy solo un creador, 
+                        soy un <strong>coleccionista de historias</strong> que las plasma en arte tangible.
+                    </p>
+                    
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <span class="about__feature-text">Nómada Digital & Escalador</span>
+                        </div>
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"></path>
+                                </svg>
+                            </div>
+                            <span class="about__feature-text">Técnicas Ancestrales</span>
+                        </div>
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"></path>
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                </svg>
+                            </div>
+                            <span class="about__feature-text">100% Hecho a Mano</span>
+                        </div>
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </div>
+                            <span class="about__feature-text">Piezas Únicas e Irrepetibles</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about__image">
+                    <div class="about__image-main"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="products__container">
+            <div class="products__header">
+                <h2 class="products__title">
+                    Mis <span class="products__title-highlight">Creaciones</span> Originales
+                </h2>
+                <p class="products__subtitle">
+                    Cada pieza cuenta una historia de aventura, cultura y conexión humana
+                </p>
+            </div>
+            
+            <div class="products__grid">
+                <div class="product-card">
+                    <div class="product-card__image" data-emoji="🏔️"><img src="./assets/img/IMG-20230312-WA0000.jpg" style="width: 100%; height: 100%;" class="rounded mx-auto d-block" alt="..."></div>
+                    <div class="product-card__badge">Edición Limitada</div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Cerámicas de Montaña</h3>
+                        <p class="product-card__description">
+                            inspirados en las formas rocosas de los Andes. 
+                            Cada pieza captura la esencia de una cumbre conquistada.
+                        </p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$85</span>
+                            <span class="product-card__price-original">$120</span>
+                        </div>
+                        <button class="btn btn--primary btn--full-width">Ver Colección</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image" data-emoji="🎭"><img src="./assets/img/IMG-20230312-WA0035.jpg" style="width: 100%; height: 100%;" class="rounded mx-auto d-block" alt="..."></div>
+                    <div class="product-card__badge">Bestseller</div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Máscaras Tribales Punk</h3>
+                        <p class="product-card__description">
+                            Fusión rebelde entre arte ancestral y estética underground. 
+                            Perfectas para decoración o performances artísticas.
+                        </p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$150</span>
+                            <span class="product-card__price-original">$200</span>
+                        </div>
+                        <button class="btn btn--primary btn--full-width" onclick="location.href='https://artesaniaviajera.online/tienda/'">Ver Colección</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image" data-emoji="🪢"><img src="./assets/img/IMG-20230312-WA0035.jpg" style="width: 100%; height: 100%;" class="rounded mx-auto d-block" alt=""></div>
+                    <div class="product-card__badge">Nuevo</div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Textiles Nómadas</h3>
+                        <p class="product-card__description">
+                            Tapices y accesorios tejidos con técnicas aprendidas en diferentes 
+                            pueblos. Cada hilo cuenta una historia de viaje.
+                        </p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$65</span>
+                            <span class="product-card__price-original">$90</span>
+                        </div>
+                        <button class="btn btn--primary btn--full-width">Ver Colección</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image" data-emoji="🗿"><img src="./assets/img/IMG-20230312-WA0033.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="product-card__badge">Exclusivo</div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Esculturas de Piedra</h3>
+                        <p class="product-card__description">
+                            Tallas en piedra natural recolectada en mis expediciones. 
+                            Cada escultura es un fragmento de montaña con alma.
+                        </p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$220</span>
+                            <span class="product-card__price-original">$300</span>
+                        </div>
+                        <button class="btn btn--primary btn--full-width" onclick="location.href='https://artesaniaviajera.online/tienda/'">Ver Colección</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image" ><img src="./assets/img/IMG-20230312-WA0032.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="product-card__badge">Hecho a Mano</div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Joyería Rebelde</h3>
+                        <p class="product-card__description">
+                            Accesorios únicos que combinan materiales naturales con 
+                            elementos punk. Para quienes no temen destacar.
+                        </p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$45</span>
+                            <span class="product-card__price-original">$65</span>
+                        </div>
+                        <button class="btn btn--primary btn--full-width">Ver Colección</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image" data-emoji="🎨"><img src="./assets/img/IMG-20230312-WA0032.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="product-card__badge">Arte Digital</div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Prints Digitales</h3>
+                        <p class="product-card__description">
+                            Ilustraciones digitales inspiradas en mis aventuras. 
+                            Perfectas para espacios que necesitan energía rebelde.
+                        </p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$25</span>
+                            <span class="product-card__price-original">$40</span>
+                        </div>
+                        <button class="btn btn--primary btn--full-width">Ver Colección</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web3 Section -->
+    <section id="web3" class="web3">
+        <div class="web3__container">
+            <div class="web3__header">
+                <div class="web3__badge">
+                    <span class="web3__badge-text">🚀 Futuro del Arte</span>
+                </div>
+                <h2 class="web3__title">
+                    Arte en la <span class="web3__title-highlight">Era Digital</span>
+                </h2>
+                <p class="web3__subtitle">
+                    Explorando nuevas fronteras donde el arte físico se encuentra con la innovación blockchain. 
+                    Sin perder la esencia, abrazando el futuro.
+                </p>
+            </div>
+            
+            <div class="web3__features">
+                <div class="web3__feature">
+                    <div class="web3__feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="web3__feature-title">NFTs Exclusivos</h3>
+                    <p class="web3__feature-description">
+                        Versiones digitales limitadas de mis obras físicas. 
+                        Cada NFT incluye la historia completa de la pieza y su ubicación de creación.
+                    </p>
+                </div>
+
+                <div class="web3__feature">
+                    <div class="web3__feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 12l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="web3__feature-title">Tokens de Comunidad</h3>
+                    <p class="web3__feature-description">
+                        Únete a la tribu de coleccionistas viajeros. 
+                        Los holders acceden a obras exclusivas y experiencias únicas de viaje-arte.
+                    </p>
+                </div>
+
+                <div class="web3__feature">
+                    <div class="web3__feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="web3__feature-title">Experiencias Geolocalizadas</h3>
+                    <p class="web3__feature-description">
+                        Cada obra digital incluye coordenadas reales de donde fue inspirada. 
+                        Conecta arte, lugar y aventura en una experiencia inmersiva.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="testimonials__container">
+            <div class="testimonials__header">
+                <h2 class="testimonials__title">
+                    Lo que Dice la <span class="testimonials__title-highlight">Tribu</span>
+                </h2>
+            </div>
+            
+            <div class="testimonial-carousel" id="testimonialCarousel">
+                <div class="testimonial__content">
+                    <p class="testimonial__quote" id="testimonialQuote">
+                        "Cada pieza de Daniel es un portal a la aventura. Tengo tres de sus cerámicas y cada una me transporta a esas montañas que él escaló. Es arte con alma."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar" id="testimonialAvatar">S</div>
+                        <div class="testimonial__info">
+                            <h4 id="testimonialName">Sofia Martinez</h4>
+                            <p id="testimonialRole">Coleccionista de Arte</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial__navigation">
+                    <button class="testimonial__nav-dot testimonial__nav-dot--active" data-testimonial="0"></button>
+                    <button class="testimonial__nav-dot" data-testimonial="1"></button>
+                    <button class="testimonial__nav-dot" data-testimonial="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="contact__container">
+            <div class="contact__header">
+                <h2 class="contact__title">
+                    Conectemos y <span class="contact__title-highlight">Creemos</span> Algo Único
+                </h2>
+                <p class="contact__subtitle">
+                    ¿Tienes una idea? ¿Quieres una pieza personalizada? 
+                    Hablemos sobre tu próxima aventura artística.
+                </p>
+            </div>
+            
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <h3>¿Cómo Podemos Conectar?</h3>
+                    <div class="contact__methods">
+                        <div class="contact__method">
+                            <svg class="contact__method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>daniel@artesaniaviajera.com</span>
+                        </div>
+                        <div class="contact__method">
+                            <svg class="contact__method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-10 5L2 7"></path>
+                            </svg>
+                            <span>@artesaniaviajera</span>
+                        </div>
+                        <div class="contact__method">
+                            <svg class="contact__method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.51-1.51a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.57.57A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+54 9 11 1234-5678</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form">
+                    <input type="text" class="contact__input" placeholder="Nombre" required>
+                    <input type="email" class="contact__input" placeholder="Email" required>
+                    <textarea class="contact__input" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                    <button type="submit" class="btn btn--primary btn--full-width">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <span>© 2024 Artesanía Viajera. Todos los derechos reservados.</span>
+            </div>
+            <div class="footer__links">
+                <a href="#header" class="footer__link">Inicio</a>
+                <a href="#productos" class="footer__link">Productos</a>
+                <a href="#contacto" class="footer__link">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
